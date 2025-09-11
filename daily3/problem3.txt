@@ -1,0 +1,8 @@
+Problem 3 
+
+The new print statement is:
+  
+  printf("On %d-%d-%d you spent $%.2f\n", day, month, year, amount);
+
+The key part being the .2 added in the middle of the f format
+specifier in order to round to 2 decimal points.

@@ -1,0 +1,7 @@
+Problem 4
+
+1) If the user enters 0 the code will output "Apple"
+
+2) The loop prints "Hello" 4 times.
+
+3) The loop prints "Hello" 0 times since i initalized to 0 is already greater than -10. 
