@@ -1,5 +1,5 @@
 /*   
- *  sum_array.c - function to sum the elements of an integer array
+ *  test_sum_array.c - function to sum the elements of an integer array and display the average using user input
  *  Luke Broussard (brouslr0@sewanee.edu)
  *  HW1 #2, 9/17/2020
  */
@@ -35,7 +35,7 @@ int main(void) {
         // Input validation inspiration taken from https://stackoverflow.com/questions/23189059/how-to-check-if-the-user-input-an-integer-using-scanf
         if (scanf("%d", &arr[i]) != 1) {
             printf("\n  Invalid input! Please enter an integer.\n");
-            i--; 
+            i--; // go back in the for loop to give the user another chance to enter a valid integer
             while(getchar() != '\n'); // clearing input buffer
         }
     }
