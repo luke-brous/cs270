@@ -1,0 +1,82 @@
+Luke Broussard
+CS 270
+Dr. Carl
+HW2 Part 1, 09/17/2025
+
+# Problem 1:
+
+King, Page 94, Exercises 5, 6, 7
+
+5. Yes, this if statement is legal and will compile it just isn't good coding practice. 
+   The program will read the conditional as (n >= 1) <= 10, and will then execute.
+   If n = 0, then it will print "n is between 1 and 10" because 0 >= 1 --> 0 (false), and 0 <= 10 --> 1 (true).
+   Even though the code compiles, the program does not do what the coder intended it to do.
+
+6. Yes, this if statement is legal and will compile but does not fall under good coding practice.
+   The program is read as n == (1 - 10) by the compiler, so it is checking whether n is equal to -9. 
+   If n were equal to 5 (n = 5), then the program would print nothing, since 5 does not equal -9. 
+
+7. The ternary operator reads if x then (?) y else (:) z. So, the program would print 17 if i were equal to 17. The program would also print 17 if i were equal to 17 since
+   -(-17) = 17. 
+
+# Problem 2:
+
+char c = '\5';
+short s = 4;
+int i = -3;
+float f = 6.5f;
+double d = 7.5;
+
+Give the value and type of each expression below:
+
+c * i = int -15 
+f / c = float 1.3
+(int) f = int 6
+d - f = double 1.0
+i / s = double -0.75
+
+# Problem 3: 
+Given the following code, what gets output to the screen?
+int x;
+
+x = 10;
+if (x < 10) {
+    printf("Sharks\n");
+} else {
+    printf("Jets\n");
+}
+
+Output:
+Jets
+
+# Problem 4: 
+What is wrong with the following code? It is intended to print the numbers 0 through 9.
+
+int count;
+   
+count = 0;
+while (love < 10) {
+    printf("%d\n", count);
+}
+
+Answer: There are 2 main issues with this program. The first is the conditional check 'love' should
+        be replaced with 'count'. Second, the count variable needs to be incremented through each pass
+        of the loop in order to avoid an infinite loop. the final program should look like this:
+int count;
+   
+count = 0;
+while (count < 10) {
+    printf("%d\n", count);
+    count++;
+}
+
+Problem 5:
+The check is done on line 45 --> s[i] = '\0';
+This is where the code looks to see if s[i] is the end of
+the string using a null character \0.
+
+
+
+
+
+
